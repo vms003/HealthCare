@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Healthcare Dashboard</h1>
+    
+    <div>
+        <h2>Data Analysis</h2>
+        <p><a href="/data_analysis">View Data Analysis</a></p>
+    </div>
+
+    <div>
+        <h2>Model Evaluation</h2>
+        <form id="evaluateForm">
+            <button type="button" onclick="evaluateModel()">Evaluate Model</button>
+            <p id="accuracyResult"></p>
+        </form>
+    </div>
+
+    <script>
+        function evaluateModel() {
+            fetch('/api/evaluate_model', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('accuracyResult').innerText = `Model accuracy: ${data.accuracy}`;
+                })
+                .catch(error => console.error('Error evaluating model:', error));
+        }
+    </script>
+</body>
+</html>

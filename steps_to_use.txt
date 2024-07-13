@@ -1,0 +1,77 @@
+Owner and build by: Viraj Suthar, github: https://github.com/vms003, Contact : virajsuthar2003@gmail.com
+-----------------------------------------------------------------------
+# Healthcare Web Application
+
+This is a web application for healthcare purposes, featuring machine learning models for symptom analysis, image analysis, and diagnostic support.
+----------------------------------------------------------------------------------------------------------------------------
+## Installation
+
+### Backend (Flask)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/healthcare-web-app.git
+   cd healthcare-web-app/backend/app
+
+2. Set up a virtual environment:
+
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Unix or MacOS
+source venv/bin/activate
+
+3. Install dependencies:
+
+pip install -r requirements.txt
+---------------------------------------------------------------------------------------------------------------------------
+Frontend (React)
+
+1. Navigate to the frontend directory:  
+
+   ---  cd ../../frontend
+
+2. Install Node.js dependencies:
+   
+   ---  Install Node.js dependencies:
+
+----------------------------------------------------------------------------------------------------------------------------
+Usage: 
+
+1. Start the Flask backend server:
+
+    ---  cd ../backend/app
+    ---  flask run
+
+2. Start the React frontend development server:
+
+    ---  cd ../../frontend
+    ---  npm start
+-----------------------------------------------------------------------------------------------------------------------------
+
+Open your web browser and navigate to http://localhost:3000 to use the application.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Contributing
+
+1. Backend Directory (backend/app/):
+
+ ---> Include all backend scripts (__init__.py, models/, routes/, services/, config.py, etc.).
+ ---> Ensure all necessary files are present for Flask application setup and execution.
+
+2. Frontend Directory (frontend/):
+
+ ---> Include the React application (src/, public/, package.json, package-lock.json, etc.).
+ ---> Ensure npm install dependencies are included and the npm start command is specified in the README.
+
+3. Additional Directories:
+
+ ---> Data: If applicable, include directories for raw and processed data (data/raw_data/, data/processed_data/).
+ ---> Documentation (docs/): Include any additional documentation files, such as project specifications or design documents.
+ ---> Configuration (config/): Store configuration files not included in the main application (config.py, database configurations).
+ ---> Scripts (scripts/): Include any helper scripts or automation tools used in the project.
+
+4. .gitignore:
+
+ ----> Ensure your repository includes a .gitignore file to exclude files such as virtual environments (venv/ or virtualenv/), compiled files, and sensitive information (like API keys stored in environment variables).

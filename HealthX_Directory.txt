@@ -1,0 +1,28 @@
+HealthX/
+├── backend/
+│   └── app/
+│       ├── __init__.py
+│       ├── models/
+│       ├── routes/
+│       ├── services/
+│       ├── static/
+│       ├── templates/
+│       ├── utils/
+│       ├── config.py
+│       ├── Dockerfile
+│       └── requirements.txt
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── README.md
+├── data/
+│   ├── raw_data/
+│   └── processed_data/
+├── docs/
+├── config/
+├── scripts/
+├── .gitignore
+├── LICENSE
+└── README.md
